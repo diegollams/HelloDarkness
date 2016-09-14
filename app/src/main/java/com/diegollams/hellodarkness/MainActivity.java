@@ -13,14 +13,5 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        MediaPlayer mp = MediaPlayer.create(MainActivity.this, R.raw.darkness);
-//        Log.e("shit"," primero");
-//        try {
-//            mp.start();
-//            Log.e("shit"," Segundo");
-//        } catch (Exception e) {
-//            Log.e("shit"," Sext");
-//            e.printStackTrace();
-//        }
     }
 }

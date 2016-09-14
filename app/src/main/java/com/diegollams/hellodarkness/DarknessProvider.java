@@ -32,7 +32,7 @@ public class DarknessProvider extends AppWidgetProvider {
 
             PendingIntent pendingIntent = PendingIntent.getBroadcast(context,
                     0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
-            remoteViews.setOnClickPendingIntent(R.id.layout, pendingIntent);
+            remoteViews.setOnClickPendingIntent(R.id.sadness_button, pendingIntent);
             appWidgetManager.updateAppWidget(componentName, remoteViews);
         }
     }
@@ -41,6 +41,7 @@ public class DarknessProvider extends AppWidgetProvider {
     public void onReceive(Context context, Intent intent) {
         super.onReceive(context, intent);
         if(ACTION_CLICK.equals(intent.getAction())){
+            Toast.makeText(context, R.string.start_darkess, Toast.LENGTH_LONG).show();
             MediaPlayer mp = MediaPlayer.create(context, R.raw.darkness);
             try {
                 mp.start();
