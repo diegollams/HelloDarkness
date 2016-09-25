@@ -3,12 +3,15 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
+    <TextView
         android:background="@drawable/shape"
         android:id="@+id/sadness_button"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/start_darkess"
+        android:gravity="center"
+        android:textColor="@color/white"
         android:layout_gravity="center"
+        android:textSize="12sp"
         />
 </FrameLayout>

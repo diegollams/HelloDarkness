@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Hello Darkness</string>
     <string name="start_darkess">Start Darkess</string>
+    <string name="title_activity_main">Play Darnkness</string>
 </resources>
